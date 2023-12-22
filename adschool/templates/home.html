@@ -1,0 +1,23 @@
+{%  extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<div class="home-screen">
+    <img src="{% static '/image/bg11.jpg' %}" alt="Home Screen Image">
+</div>
+<br>
+<div class="about-us">
+    <h1>About us </h1>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <img src="{% static '/image/bg2.jpg' %}" alt="Home Screen Image">
+    </div>
+    <div class="col-sm">
+      <p>AD School is a creative hub dedicated to nurturing aspiring advertising professionals. Our curriculum, crafted by industry experts, fosters innovative thinking and practical skills essential in today's advertising landscape. With hands-on training, expert guidance, and cutting-edge resources, we empower our students to thrive as imaginative and strategic leaders in the dynamic realm of advertising.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

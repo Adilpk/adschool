@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+<br>
+<h2>{{ department.name }} Department</h2>
+
+    <div>
+        <h4>Description:</h4>
+        <p>{{ department.description }}</p>
+    </div>
+<br>
+    <div>
+        <h4>Courses Offered:</h4>
+        <ul>
+            {% for course in courses %}
+            <li>{{ course.title }} - {{ course.description }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    </div>
+{% endblock %}
